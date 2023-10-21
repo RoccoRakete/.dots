@@ -1,0 +1,20 @@
+{
+  "wm_gaps": 5,
+  "radii": 10,
+  "bar_style": "floating",
+  "color_scheme": "dark",
+  "wallpaper": "/home/martin/Dokumente/Backgrounds/wallpapers/Gruv/stairs.jpg",
+  "screen_corners": true,
+  "shadow": "rgba(0, 0, 0, 0)",
+  "drop_shadow": false,
+  "desktop_clock": "center",
+  "theme": "kitty_dark",
+  "avatar": "/home/martin/face.png",
+  "border_width": 3,
+  "spacing": 9,
+  "hypr_active_border": "rgba(476C43FF)",
+  "accent": "#076678",
+  "widget_bg": "#171717",
+  "border_color": "#171717",
+  "accent_fg": "#171717"
+}
