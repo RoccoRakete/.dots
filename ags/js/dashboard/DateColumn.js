@@ -1,5 +1,4 @@
 import Clock from '../misc/Clock.js';
-import * as vars from '../variables.js';
 import { Widget } from '../imports.js';
 
 export default () => Widget.Box({
@@ -7,9 +6,6 @@ export default () => Widget.Box({
     className: 'datemenu',
     children: [
         Clock({ format: '%H:%M' }),
-        Widget.Label({
-            binds: [['label', vars.uptime, 'value', t => `uptime: ${t}`]],
-        }),
         Widget.Box({
             className: 'calendar',
             children: [

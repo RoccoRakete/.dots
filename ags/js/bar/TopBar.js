@@ -70,6 +70,7 @@ const End = () => Widget.Box({
                 ColorPicker(),
             ],
         }),
+        
         Widget.Box({
             className: 'system-info',
             children: [
@@ -78,8 +79,6 @@ const End = () => Widget.Box({
                 SysProgress('temp', 'Temperature', '°C'),
             ],
         }),
-        SeparatorDot(),
-        ScreenRecord(),
         SeparatorDot(Recorder, r => r.recording),
         SeparatorDot(Battery, b => b.available),
         BatteryBar(),

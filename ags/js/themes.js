@@ -112,6 +112,20 @@ const tokyo_night = {
     hover_fg: '#B5BFE8',
 };
 
+const adwaita = {
+    color_scheme: 'adwaita',
+    red: '#c01c28',
+    green: '#2ec27e',
+    yellow: '#f5c211',
+    blue: '#3584e4',
+    magenta: '#813d9c',
+    teal: '#99c1f1',
+    orange: '#e66100',
+    bg_color: '#1E1E1E',
+    fg_color: '#deddda',
+    hover_fg: '#c0bfbc',
+};
+
 const light = {
     color_scheme: 'light',
     red: '#f66151',
@@ -221,7 +235,7 @@ const colors_nord = {
 const colors_tokyo_night = {
     wallpaper_fg: 'white',
     hypr_active_border: 'rgba(BB9AF7FF)',
-    hypr_inactive_border: 'rgba(#24283BDD)',
+    hypr_inactive_border: 'rgba(24283BDD)',
     accent: '$blue',
     accent_fg: '$bg_color',
     widget_bg: '$fg_color',
@@ -231,6 +245,21 @@ const colors_tokyo_night = {
     bar_border_color: '$magenta',
     border_opacity: 100,
     border_width: 2,
+}
+
+const colors_adwaita = {
+    wallpaper_fg: 'white',
+    hypr_active_border: 'rgba(1c71d8FF)',
+    hypr_inactive_border: 'rgba(241f31DD)',
+    accent: '$blue',
+    accent_fg: '$bg_color',
+    widget_bg: '$fg_color',
+    widget_opacity: 94,
+    active_gradient: 'to right, $accent, lighten($accent, 25%)',
+    border_color: '$magenta',
+    bar_border_color: '$blue',
+    border_opacity: 100,
+    border_width: 1,
 }
 
 
@@ -325,6 +354,19 @@ const tokyo_night_theme = {
     ...colors_tokyo_night,
 };
 
+const adwaita_theme = {
+    avatar: '~/face.png',
+    name: 'adwaita_theme',
+    icon: '󰄛',
+    gtk_theme: 'adw-gtk3-dark',
+    icons: 'Adwaita',
+    pywall_theme: 'base16-default',
+    theme_wallpaper: 'minimal_landscape.jpg',
+    ...adwaita,
+    ...misc,
+    ...colors_adwaita,
+};
+
 export default [
     gruvbox_dark_theme,
     gruvbox_darktooth_theme,
@@ -333,4 +375,5 @@ export default [
     material_dark_theme,
     nord_theme,
     tokyo_night_theme,
+    adwaita_theme
 ];
