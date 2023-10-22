@@ -80,6 +80,7 @@ const End = () => Widget.Box({
             ],
         }),
         SeparatorDot(Recorder, r => r.recording),
+        ScreenRecord(),
         SeparatorDot(Battery, b => b.available),
         BatteryBar(),
         SystemIndicators(),
